@@ -1,0 +1,6 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.*)$ /~m197116/capstone/$1index.php [R=301,L]
+
+ErrorDocument 404 http://midn.cs.usna.edu/~m197116/capstone/error/404.php

@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule (.*) /~m197116/capstone/home/error.php [R=404,L]
