@@ -8,7 +8,7 @@
     <div class=jumbotron style=\"border: 3px solid black\">
       <p>IC480 CS/IT Capstone
       <ul>
-        <li>This website is a work in progress...</li>
+        <li><a href='results.php'>Results</a> of machine learning algorithm computations</li>
       </ul>
     </div>
   </div>";
