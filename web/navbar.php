@@ -16,12 +16,13 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="<?php echo HOME_PAGE;?>home/about.php">About Us</a></li>
+            <li><a href="<?php echo HOME_PAGE;?>home/results.php">Results</a></li>
             <li class="dropdown">
               <a class="dropdown-toggle" href=# title=More data-toggle=dropdown role=button aria-haspopup=true aria-expanded=false>More<span class="caret" aria-hidden=true></span></a>
               <ul class="dropdown-menu scrollable-menu">
-                <li><a href="<?php echo HOME_PAGE;?>test/demo.php">Program Exec Test</a></li>
+                <!--<li><a href="<?php echo HOME_PAGE;?>test/live.php">Program Exec Test</a></li>
                 <li><a href="<?php echo HOME_PAGE;?>test/example.php">Example Template</a></li>
-                <li class=divider />
+                <li class=divider />-->
                 <li><a href="https://seer.cancer.gov/">National Cancer Institute SEER</a></li>
                 <li><a href=https://www.kaggle.com/learn/machine-learning>ML Tutorial</a></li>
               </ul>
