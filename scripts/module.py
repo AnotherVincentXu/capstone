@@ -1,5 +1,6 @@
 #!/usr/bin/python3 -u
 
+import time
 import sys
 import subprocess
 
@@ -16,6 +17,7 @@ if __name__ == '__main__':
             print("*" * 80)
             for i in range(n):
                 print(i)
+                time.sleep(1)
             print("*" * 80)
             print("End " + "module.py")
             print("*" * 80)
