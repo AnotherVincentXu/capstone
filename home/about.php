@@ -20,7 +20,7 @@
   <script>
     function about(id) {
       var content = document.getElementById('display');
-      content.innerHTML = \"<h3>\" + id + \"</h3><p>Coming soon...\";
+      content.innerHTML = \"<h3>\" + id + \"</h3><p>Group 8\";
 
       var image = document.getElementById(id);
       console.clear();
