@@ -40,6 +40,10 @@
     <script src="<?php echo WEB_PATH;?>bootstrap/js/jquery.min.js"></script>
     <script src="<?php echo WEB_PATH;?>bootstrap/js/bootstrap.min.js"></script>
 
+    <!-- Datatables -->
+    <link rel="stylesheet" type="text/css" href="<?php echo WEB_PATH; ?>datatables.net/datatables.min.css"/>
+    <script type="text/javascript" src="<?php echo WEB_PATH; ?>datatables.net/datatables.min.js"></script>
+
     <!-- Extract the following css -->
     <style>
       body {
