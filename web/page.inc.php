@@ -6,9 +6,13 @@ class Page
   private $title;
   private $keywords = 'machine learning, cancer, research, computer science';
   private $xmlheader = "<!DOCTYPE html><html lang='en'>";
+  private $showHeader;
+  private $showFooter;
 
-  public function __construct($title) {
+  public function __construct($title, $showHeader=False, $showFooter=True) {
     $this->__set("title", $title);
+    $this->__set("showHeader", $showHeader);
+    $this->__set("showFooter", $showFooter);
   }
 
   public function __set($key, $value) {
@@ -36,9 +40,9 @@ class Page
     $this -> displayStyles();
     echo "</head>\n<body>\n<div class=container>";
     $this -> displayNavbar();
-    // $this -> displayContentHeader();
+    if($this->showHeader) { $this -> displayContentHeader(); }
     echo $this->content . "</div>";
-    $this -> displayContentFooter();
+    if($this->showFooter) { $this -> displayContentFooter(); }
     echo "</body>\n</html>\n";
   }
 
@@ -78,6 +82,9 @@ class Page
 
     <!-- Printing -->
     <link rel="stylesheet" type="text/css" media="print" href="<?php echo WEB_PATH; ?>css/mysite-print.css" />
+
+    <!--DataTables-->
+    <link rel="stylesheet" type="text/css" href="<?php echo WEB_PATH; ?>datatables.net/datatables.min.css"/>
     <?php
   }
 
@@ -85,6 +92,9 @@ class Page
     <!-- Bootstrap core JavaScript -->
     <script src="<?php echo WEB_PATH;?>bootstrap/js/jquery.min.js"></script>
     <script src="<?php echo WEB_PATH;?>bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- DataTables -->
+    <script type="text/javascript" src="<?php echo WEB_PATH; ?>datatables.net/datatables.min.js"></script>
     <?php
   }
 
